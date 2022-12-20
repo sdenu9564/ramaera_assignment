@@ -1,0 +1,27 @@
+GET http://localhost:3000/
+###
+GET http://localhost:3000/api/users/12
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJhYnVAZ21haWwuY29tIiwiaWF0IjoxNjcxNTI3NzIyfQ.WeGEzIzU5Ga6c28UUR-P3EoXMjBDrFRpJl7WMK2u0t4
+###
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+    "name":"sourav Manna",
+    "email":"Sourav@gmail.com",
+    "address":"Bangalore"
+}
+
+###
+PATCH  http://localhost:3000/api/users/13
+Content-Type: application/json
+x-access-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJhYnVAZ21haWwuY29tIiwiaWF0IjoxNjcxNTI3NzIyfQ.WeGEzIzU5Ga6c28UUR-P3EoXMjBDrFRpJl7WMK2u0t4
+
+
+{
+    "address":"Chittaranjan"
+}
+
+#####
+DELETE   http://localhost:3000/api/users/13
+x-access-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJhYnVAZ21haWwuY29tIiwiaWF0IjoxNjcxNTI3NzIyfQ.WeGEzIzU5Ga6c28UUR-P3EoXMjBDrFRpJl7WMK2u0t4
