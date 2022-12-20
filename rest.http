@@ -1,7 +1,7 @@
 GET http://localhost:3000/
 ###
-GET http://localhost:3000/api/users/12
-x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJhYnVAZ21haWwuY29tIiwiaWF0IjoxNjcxNTI3NzIyfQ.WeGEzIzU5Ga6c28UUR-P3EoXMjBDrFRpJl7WMK2u0t4
+GET http://localhost:3000/api/users/id
+x-access-token: 
 ###
 POST http://localhost:3000/api/users
 Content-Type: application/json
@@ -13,15 +13,14 @@ Content-Type: application/json
 }
 
 ###
-PATCH  http://localhost:3000/api/users/13
+PATCH  http://localhost:3000/api/users/id
 Content-Type: application/json
-x-access-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJhYnVAZ21haWwuY29tIiwiaWF0IjoxNjcxNTI3NzIyfQ.WeGEzIzU5Ga6c28UUR-P3EoXMjBDrFRpJl7WMK2u0t4
-
+x-access-token:
 
 {
     "address":"Chittaranjan"
 }
 
 #####
-DELETE   http://localhost:3000/api/users/13
-x-access-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJhYnVAZ21haWwuY29tIiwiaWF0IjoxNjcxNTI3NzIyfQ.WeGEzIzU5Ga6c28UUR-P3EoXMjBDrFRpJl7WMK2u0t4
+DELETE   http://localhost:3000/api/users/id
+x-access-token:
