@@ -13,8 +13,10 @@ datasource db {
 //User schema define
 model User {
   id Int @id @default(autoincrement())
-  name String
+  firstname String
+  firstname String
   email String @unique
+  mobile Int @default(0)
   address String 
   token String @default("null")
 }
